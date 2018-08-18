@@ -1,0 +1,69 @@
+#subheader {
+    height: 100px;
+    background-color: #FF9239; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #FF9239, #FF3F00);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+#subheader h1 {
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    color: #FFFFFF
+}
+#subheader button {
+    position: absolute;
+    top: 82px;
+    right: 20px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    padding: 5px 20px;
+}
+#subheader button:hover {
+    background-color: #333333;
+    opacity: 1;
+}
+.buttonContainer {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.row {
+    display: flex;
+    margin-bottom: 5px;
+}
+.wrapper {
+    display: flex;
+    flex: 1 0 23%;
+    text-align: center;
+    margin: 0 3px;
+    background-color: #f2efd2;
+    color: #FF9239;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.wrapper:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+.wrapper img {
+    width: 100%;
+}
+.wrapper:hover img {
+    opacity: 0.2;
+}
+.wrapper h3 {
+    font-size: 35px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: transparent;
+}
+.wrapper:hover h3 {
+    color: #eee;
+}

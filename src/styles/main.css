@@ -1,0 +1,19 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+#left h3 {
+    color: #FF9239;
+    font-weight: bold;
+}
+#right i {
+    font-size: 35px;
+    color: #FF9239;
+}
