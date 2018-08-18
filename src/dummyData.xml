@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zenbu version="1.0">
+    <q>wellington breakfast</q>
+    <count>10</count>
+    <page>1</page>
+    <time>Sat, 18 Aug 2018 14:04:59 +1200</time>
+    <entries>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1215579-drexels-breakfast-restaurant-wellington</zenbulink>
+            <name>Drexels Breakfast Restaurant Wellington</name>
+            <tags>Breakfast Restaurant, Lunch, Gluten Free goodies, Salads, Burgers, Pesto</tags>
+            <website>http://www.drexels.co.nz</website>
+            <address>32 Waring Taylor Street, Wellington</address>
+            <phone>04 499 5242</phone>
+            <open>Mon-Fri 6.30am-2pm, Sat-Sun 8am-2pm</open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-41.28211</latitude>
+            <longitude>174.776958</longitude>
+            <categories>Restaurant</categories>
+            <version>1</version>
+            <updated_by>zenbu_out010</updated_by>
+            <edited_at>Thu, 26 Feb 2015 05:56:18 -0000</edited_at>
+            <updated_at>Thu, 26 Feb 2015 05:56:18 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1211729-joyces-bed-and-breakfast</zenbulink>
+            <name>Joyce's Bed and Breakfast</name>
+            <tags>Joyce's Bed and Breakfast Wellington offers three guest rooms in the heart of the Wellington city and provides you cooked breakfast.</tags>
+            <website>http://www.joycesbnb.nz</website>
+            <address>46 Aurora Terrace, Kelburn, Wellington</address>
+            <phone>04-4997338</phone>
+            <open></open>
+            <gisprecision>ROOFTOP</gisprecision>
+            <latitude>-41.281389</latitude>
+            <longitude>174.773118</longitude>
+            <categories>BedAndBreakfast</categories>
+            <version>1</version>
+            <updated_by>JoyceBnB</updated_by>
+            <edited_at>Thu, 27 Nov 2014 08:52:46 -0000</edited_at>
+            <updated_at>Thu, 27 Nov 2014 08:52:46 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1093352-dogs-breakfast-trading-company-wellington</zenbulink>
+            <name>Dogs Breakfast Trading Company Wellington</name>
+            <tags>Furniture, homeware, giftware and lifestyle products (was Arbuckles)</tags>
+            <website>http://www.dogsbreakfastonline.com</website>
+            <address>Cnr Stout &amp; Ballance Streets, Wellington</address>
+            <phone>04 470 7897</phone>
+            <open>Mon-Thu:8.30am-5.30pm, Fri:8.30am-6.30pm, Sat:10am-5pm, Sun:10am-4pm</open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-41.280822</latitude>
+            <longitude>174.777052</longitude>
+            <categories>FurnitureStore</categories>
+            <version>4</version>
+            <updated_by>rc8</updated_by>
+            <edited_at>Thu, 10 Sep 2009 17:31:20 -0000</edited_at>
+            <updated_at>Thu, 10 Sep 2009 17:31:20 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1179106-tudor-manor-bed-breakfast</zenbulink>
+            <name>Tudor Manor Bed &amp; Breakfast</name>
+            <tags>Bed and Breakfast accommodation</tags>
+            <website></website>
+            <address>10 Tudor Court, Paraparaumu Beach, Wellington</address>
+            <phone></phone>
+            <open></open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-40.895133</latitude>
+            <longitude>174.986127</longitude>
+            <categories>BedAndBreakfast LodgingBusiness</categories>
+            <version>1</version>
+            <updated_by>zenbu</updated_by>
+            <edited_at>Thu, 18 Nov 2010 13:44:39 -0000</edited_at>
+            <updated_at>Thu, 18 Nov 2010 13:44:39 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1160162-woodland-retreat-bed-and-breakfast</zenbulink>
+            <name>Woodland Retreat Bed and Breakfast</name>
+            <tags>B&amp;B Accommodation</tags>
+            <website></website>
+            <address>55 Rona Street, Eastbourne, Wellington</address>
+            <phone></phone>
+            <open></open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-41.28922</latitude>
+            <longitude>174.905313</longitude>
+            <categories>BedAndBreakfast LodgingBusiness</categories>
+            <version>1</version>
+            <updated_by>zenbu</updated_by>
+            <edited_at>Mon, 21 Sep 2009 15:31:02 -0000</edited_at>
+            <updated_at>Mon, 21 Sep 2009 15:31:02 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1158883-brick-house-bed-and-breakfast</zenbulink>
+            <name>Brick House Bed and Breakfast</name>
+            <tags>B&amp;B Accommodation</tags>
+            <website></website>
+            <address>2 Wallace St, Mount Cook, Wellington</address>
+            <phone></phone>
+            <open></open>
+            <gisprecision>number</gisprecision>
+            <latitude>-41.301583</latitude>
+            <longitude>174.773768</longitude>
+            <categories>BedAndBreakfast LodgingBusiness</categories>
+            <version>1</version>
+            <updated_by>zenbu</updated_by>
+            <edited_at>Mon, 21 Sep 2009 15:30:20 -0000</edited_at>
+            <updated_at>Mon, 21 Sep 2009 15:30:20 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1158946-central-city-bed-and-breakfast</zenbulink>
+            <name>Central City Bed and Breakfast</name>
+            <tags>B&amp;B Accommodation</tags>
+            <website></website>
+            <address>6E Halleys Lane, Te Aro, Wellington</address>
+            <phone></phone>
+            <open></open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-41.292011</latitude>
+            <longitude>174.779948</longitude>
+            <categories>BedAndBreakfast LodgingBusiness</categories>
+            <version>1</version>
+            <updated_by>zenbu</updated_by>
+            <edited_at>Mon, 21 Sep 2009 15:30:22 -0000</edited_at>
+            <updated_at>Mon, 21 Sep 2009 15:30:22 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1159264-hillcrest-bed-and-breakfast</zenbulink>
+            <name>Hillcrest Bed and Breakfast</name>
+            <tags>B&amp;B Accommodation</tags>
+            <website></website>
+            <address>39 Takarau Gorge Road, Ohariu Valley, Wellington</address>
+            <phone></phone>
+            <open></open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-41.211437</latitude>
+            <longitude>174.770612</longitude>
+            <categories>BedAndBreakfast LodgingBusiness</categories>
+            <version>1</version>
+            <updated_by>zenbu</updated_by>
+            <edited_at>Mon, 21 Sep 2009 15:30:32 -0000</edited_at>
+            <updated_at>Mon, 21 Sep 2009 15:30:32 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1140616-verve-cafe-wellington</zenbulink>
+            <name>Verve Cafe Wellington</name>
+            <tags>Cafe, Coffee, Espresso, Breakfast, Lunch, Snack, Tea, Milkshakes, Takeaway</tags>
+            <website></website>
+            <address>Ground Floor, Shop 26, Capital On The Quay Shopping Centre, 250 Lambton Quay, Wellington</address>
+            <phone>04 471 1352</phone>
+            <open></open>
+            <gisprecision>number</gisprecision>
+            <latitude>-41.283671</latitude>
+            <longitude>174.775246</longitude>
+            <categories>CafeOrCoffeeShop</categories>
+            <version>2</version>
+            <updated_by>zenbu_out010</updated_by>
+            <edited_at>Tue, 07 Apr 2015 10:13:16 -0000</edited_at>
+            <updated_at>Tue, 07 Apr 2015 10:13:16 -0000</updated_at>
+        </entry>
+        <entry>
+            <zenbulink>https://www.zenbu.co.nz/entry/1210491-mojo-coffee-wellington-airport-the-rocks</zenbulink>
+            <name>Mojo Coffee Wellington Airport The Rocks</name>
+            <tags>Cafe, Wholesale, Coffee, Barista, Roastery, Cooked breakfast, Cabinet food, Pizza, Platters, Wine, Beer</tags>
+            <website>http://www.mojocoffee.co.nz/</website>
+            <address>Wellington International Airport, Stewart Duff Drive, Wellington</address>
+            <phone>04 388 4215</phone>
+            <open></open>
+            <gisprecision>manual</gisprecision>
+            <latitude>-41.327401</latitude>
+            <longitude>174.807513</longitude>
+            <categories>CafeOrCoffeeShop</categories>
+            <version>1</version>
+            <updated_by>zenbu_out010</updated_by>
+            <edited_at>Wed, 15 Oct 2014 12:33:56 -0000</edited_at>
+            <updated_at>Wed, 15 Oct 2014 12:33:56 -0000</updated_at>
+        </entry>
+    </entries>
+</zenbu>
