@@ -1,0 +1,45 @@
+#header {
+    border-bottom: 4px solid #FF9239;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+#landing {
+    margin-top: 50px;
+}
+.wrapper {
+    display: flex;
+    width: 820px;
+    margin: auto;
+}
+.wrapper img {
+    height: 500px;
+    width: 500px;
+}
+#titleAndButton {
+    padding: 20px 40px 0;
+    width: 300px;
+}
+#titleAndButton h1 {
+    color: #FF9239;
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: -7px -5px 4px #A9A9A9;
+}
+#titleAndButton a {
+    color: #FFFFFF;
+    background-color: #FF9239;
+    background-image: linear-gradient(to right, #FF3F00, #FF9239);
+    font-size: 25px;
+    border-radius: .9rem;
+    padding: 5px 20px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(169,169,169,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(169,169,169,1);
+    box-shadow: 0px 0px 5px 5px rgba(169,169,169,1);
+}
+#titleAndButton a:hover {
+    background-color: #333333;
+    background-image: none;
+    opacity: 1;
+}
