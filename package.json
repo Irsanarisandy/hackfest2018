@@ -24,7 +24,9 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.3",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "xml2js": "^0.4.19",
+    "xml2json": "^0.11.2"
   },
   "engines": {
     "node": "10.7.0"
