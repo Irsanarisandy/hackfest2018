@@ -7,7 +7,9 @@ h1, h2, h3, p {
 #header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 12px;
+    
 }
 #left h3 {
     color: #FF9239;
@@ -17,3 +19,10 @@ h1, h2, h3, p {
     font-size: 35px;
     color: #FF9239;
 }
+#logoLink{
+    text-decoration: none;
+}
+#logoLink h3{
+    font-weight: 700;
+}
+
