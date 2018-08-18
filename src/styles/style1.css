@@ -1,0 +1,48 @@
+#root .buttonContainer {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+#root .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+#root .wrapper {
+    flex: 1 0 23%;
+    text-align: center;
+    padding: 130px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 0 3px;
+    box-shadow: 1px 1px 1px #333333;
+    opacity: 0.8;
+}
+#root h3 {
+    font: 30px "Helvetica Neue", Arial, Helvetica;
+    transform: translateY(30%);
+    transition: all 0.3s ease-in-out;
+}
+#root .wrapper:nth-child(odd) {
+    background-color: #88bb33;
+    color: #f2efd2;
+    transition: all .3s ease-in-out;
+}
+#root .wrapper:nth-child(even) {
+    background-color: #f2efd2;
+    color: #88bb33;
+    transition: all .3s ease-in-out;
+}
+#root .wrapper:hover {
+    cursor: pointer;
+    background-color: #333333;
+    opacity: 1;
+    transform: translate(-2px, -2px);
+}
+#root .wrapper:hover h3 {
+    transform: translateY(0);
+    color: #eee;
+}
