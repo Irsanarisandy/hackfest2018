@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/lastPage.css">
 
     <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css" /> 
     <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
@@ -25,6 +25,8 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
+
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAyzizr21hVlaeoaijpgppdfy-QuZKx1Vo&&libraries=places&callback=initMap2"></script> -->
     <script type="text/javascript" src="js/carousel.js"></script>
     
     <title>Food App</title>
@@ -45,16 +47,43 @@
         <div id="subheader">
             <a href="index.html" class="btn buttonSub">Back</a>
             <h1>WHERE WOULD YOU LIKE TO EAT?</h1>
-            <a href="carousel.html" class="btn buttonSub">Skip</a>
+            <a href="carousel.html" class="btn"></a>
         </div>
-        <div class="carouselContainer">
-            <div class="foodCarousel">
-                <div class="slideWrapper"><img src="assets/italianCuisine.png" /></div>
-                <div class="slideWrapper"><img src="assets/indianCuisine.png" /></div>
-                <div class="slideWrapper"><img src="assets/mexicanCuisine.png" /></div>
-                <div class="slideWrapper"><img src="assets/italianCuisine.png" /></div>
-                <div class="slideWrapper"><img src="assets/indianCuisine.png" /></div>
-                <div class="slideWrapper"><img src="assets/mexicanCuisine.png" /></div>
+        <div class="placesContainer">
+            <div class="carouselContainer">
+                <div class="foodCarousel">
+                    <div class="slideWrapper"><img src="assets/italianCuisine.png" /></div>
+                    <div class="slideWrapper"><img src="assets/indianCuisine.png" /></div>
+                    <div class="slideWrapper"><img src="assets/mexicanCuisine.png" /></div>
+                    <div class="slideWrapper"><img src="assets/italianCuisine.png" /></div>
+                    <div class="slideWrapper"><img src="assets/indianCuisine.png" /></div>
+                    <div class="slideWrapper"><img src="assets/mexicanCuisine.png" /></div>
+                </div>
+            </div>
+            <div class="placeDetailsContainer">
+                <div id="map">
+                    <!-- MAP GOES HERE -->
+                    <iframe 
+                        frameborder="0" 
+                        style="border:0" 
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBabvMRMRkjX9y7EQcRTu2h_yy7W3yy01s&q=Thai+Chefs+Restaurant+Auckland+66+Parnell+Road+Parnell+Auckland+1052&center=-36.852121,174.77854"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="restaurantNameBox">
+                    <h1 id="restaurantName">The Restaurant</h1>
+                    <h3 id="cuisineType">Type of cuisine</h3>
+                </div>
+                <div class="placeDetails">
+                    <div class="placeTextDetails">
+                        <h5>Address:</h5>
+                        <p id="placeAddress">Address goes here</p>
+                        <h5>Phone:</h5>
+                        <p id="placePhone">Phonenumber12345</p>
+                        <h5>Opening Hours:</h5>
+                        <p id="placeHours">Status</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
