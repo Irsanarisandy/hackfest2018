@@ -32,7 +32,7 @@
     <title>Food App</title>
 </head>
 
-<body>
+<body onload=loadRestaurantData()>
     <div id="root">
         <div id="header">
             <div id="left">
@@ -71,8 +71,8 @@
                     </iframe>
                 </div>
                 <div class="restaurantNameBox">
-                    <h1 id="restaurantName">The Restaurant</h1>
-                    <h3 id="cuisineType">Type of cuisine</h3>
+                    <h1 id="restaurantName"></h1>
+                    <h3 id="cuisineType"></h3>
                 </div>
                 <div class="placeDetails">
                     <div class="placeTextDetails">
@@ -80,13 +80,15 @@
                         <p id="placeAddress">Address goes here</p>
                         <h5>Phone:</h5>
                         <p id="placePhone">Phonenumber12345</p>
-                        <h5>Opening Hours:</h5>
+                        <h5 onclick="loopRestaurants()">Opening Hours:</h5>
                         <p id="placeHours">Status</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="cuisine.js"></script>
 </body>
 
 </html>

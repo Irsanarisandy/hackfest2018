@@ -55,6 +55,10 @@
     max-width: 380px;
     height: 300px;
     position: relative;
+    color: black;
+}
+.cuisineWrapper:hover {
+    cursor: pointer;
 }
 /* .wrapper {
     display: flex;
