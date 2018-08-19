@@ -128,7 +128,7 @@ function loopRestaurants() {
     } else {
         document.getElementById("placePhone").innerHTML = entries[entriesIndex].phone;
     }
-    if (typeof entries[0].open === 'object') {
+    if (typeof entries[entriesIndex].open === 'object') {
         document.getElementById("placeHours").innerHTML = 'N/A';
     } else {
         document.getElementById("placeHours").innerHTML = entries[entriesIndex].open;
@@ -165,7 +165,7 @@ function loopBackRestaurants() {
     } else {
         document.getElementById("placePhone").innerHTML = entries[entriesIndex].phone;
     }
-    if (typeof entries[0].open === 'object') {
+    if (typeof entries[entriesIndex].open === 'object') {
         document.getElementById("placeHours").innerHTML = 'N/A';
     } else {
         document.getElementById("placeHours").innerHTML = entries[entriesIndex].open;
