@@ -84,9 +84,16 @@
     padding: 0 30px;
     color: white;
 }
-#restaurantName,
+#restaurantName{
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 #cuisineType{
     margin: 0;
+    overflow: hidden;
 }
 #cuisineType{
     font-size: 18px;

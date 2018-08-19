@@ -71,7 +71,6 @@ function loadRestaurantData() {
     entries = JSON.parse(localStorage.getItem("entries"));
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
     
-    
     if (typeof entries[0].name === 'object') {
         document.getElementById("restaurantName").innerHTML = 'N/A';
     } else {
@@ -109,6 +108,16 @@ function loopRestaurants() {
         entriesIndex = 0
     }
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
+
+    // if (typeof entries[entriesIndex].name === 'object') {
+    //     document.getElementById("restaurantName").innerHTML = 'N/A';
+    // } else {
+    //     if (entries[entriesIndex].name.length > 30) {
+    //         document.getElementById("restaurantName").innerHTML = entries[entriesIndex].name.substr(0,27) + '...';
+    //     } else {
+    //         document.getElementById("restaurantName").innerHTML = entries[entriesIndex].name;
+    //     }
+    // }
 
     if (typeof entries[entriesIndex].name === 'object') {
         document.getElementById("restaurantName").innerHTML = 'N/A';
