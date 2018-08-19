@@ -37,7 +37,6 @@
     height: 82vh;
     display: flex;
     flex-direction: row;
-    background: rgb(232, 232, 232);
 }
 
 .carouselContainer{
@@ -46,22 +45,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(232, 232, 232);
 }
 .foodCarousel{
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
 .slideWrapper{
     width: 90%;
-    height: 900px;
+    height: 100%;
     padding: 15px;
-}
+}  
 
 .placeDetailsContainer{
     height: 100%;
     width: 50%;
 }
 #map{
-    height: 40%;
+    height: 58%;
     width: 100%;
     overflow: hidden;
 }
@@ -71,7 +72,7 @@
 }
 
 .restaurantNameBox{
-    height: 100px;
+    height: 12%;
     background-color: #FF9239; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, #FF9239, #FF3F00);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(182, 182, 182, 0.75);
@@ -94,7 +95,49 @@
 
 .placeDetails{
     width: 50%;
-    height: 45%;
+    height: 30%;
     display: flex;
     align-items: center;
+}
+.placeTextDetails{
+    margin: 15px 30px;
+}
+.placeTextDetails h5{
+    margin-top: 5px;
+    font-weight: 600;
+}
+.placeTextDetails p{
+    margin-bottom: 5px;
+}
+.carousel{
+    width: 100%;
+    height:100%;
+}
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+.carousel-item div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.slideImg{
+    height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background: rgba(78, 78, 78,.8);
+    width: 60px;
 }

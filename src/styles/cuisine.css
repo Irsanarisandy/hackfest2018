@@ -19,9 +19,6 @@
     letter-spacing: 1.5px;
 }
 #subheader .buttonSub {
-    /* position: absolute;
-    top: 92px;
-    right: 25px; */
     color: #FFFFFF;
     background-color: transparent;
     border-color: #FFFFFF;
@@ -56,30 +53,11 @@
     height: 300px;
     position: relative;
 }
-/* .wrapper {
-    display: flex;
-    flex: 1 0 23%;
-    text-align: center;
-    margin: 0 3px;
-    background-color: #f2efd2;
-    color: #FF9239;
-    transition: all .3s ease-in-out;
-    position: relative;
-}
-.wrapper:hover {
-    cursor: pointer;
-    background-color: #333333;
-} */
-
 .wrapper img {
     width: 100%;
     border-radius: 10px;
     opacity: 0.7;
     position: block;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
 }
 .wrapper:hover img {
     opacity: 0.2;
@@ -95,11 +73,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding-bottom: 10px;
-    /* transition: all 0.3s ease-in-out; */
-    /* top: 40%; */
-    /* width: 100%; */
-    /* color: transparent; */
+    /* padding-bottom: 10px; */
+    width: 100%;
+    background: rgba(255, 255, 255,.7);
 }
 .wrapper:hover h3 {
     color: #FF9239;
