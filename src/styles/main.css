@@ -26,3 +26,30 @@ h1, h2, h3, p {
     font-weight: 700;
 }
 
+.modal-header h5{
+    color: orange;
+    font-weight: 700;
+    font-size: 25px;
+}
+.ourTeam{
+    width: 100%;
+}
+.teamImg{
+    width: 95%;
+    margin: 10px auto;
+
+}
+.teamImg img{
+    width: 100%;
+}
+
+.teamName p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.iButton{
+    background: transparent;
+    border: none;
+}
