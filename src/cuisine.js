@@ -52,7 +52,7 @@ function getRestaurantData(cuisineType){
         .then(data => JSON.parse(data))
         .then(data => {
             // entries.push(data.zenbu.entries.entry)
-            for (i = 0; i < data.zenbu.entries.entry.length; i++) { 
+            for (i = 0; i < data.zenbu.entries.entry.length; i++) {
                 entries.push(data.zenbu.entries.entry[i])
             }
 
@@ -94,6 +94,10 @@ function loadRestaurantData() {
     } else {
         document.getElementById("placeHours").innerHTML = entries[0].open;
     }
+
+    var uri = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBabvMRMRkjX9y7EQcRTu2h_yy7W3yy01s&q=" + entries[0].name + ', ' + entries[0].address + '&center=' + entries[0].latitude + ',' + entries[0].longitude;
+    var res = encodeURI(uri);
+    document.getElementById("googlemap").src = res;
 
     console.log(entries)
     localStorage.setItem("entriesIndex", 0)
@@ -143,6 +147,11 @@ function loopRestaurants() {
         document.getElementById("placeHours").innerHTML = entries[entriesIndex].open;
     }
 
+    var uri = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBabvMRMRkjX9y7EQcRTu2h_yy7W3yy01s&q=" + entries[entriesIndex].name + ', ' + entries[entriesIndex].address + '&center=' + entries[entriesIndex].latitude + ',' + entries[entriesIndex].longitude;
+    var res = encodeURI(uri);
+    document.getElementById("googlemap").src = res;
+
+
     localStorage.setItem("entriesIndex", entriesIndex)
 }
 
@@ -180,6 +189,17 @@ function loopBackRestaurants() {
         document.getElementById("placeHours").innerHTML = entries[entriesIndex].open;
     }
 
+    //var mapDetails = "" ;
+    document.getElementById("googlemap").src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBabvMRMRkjX9y7EQcRTu2h_yy7W3yy01s&q=" + entries[entriesIndex].name + ', ' + entries[entriesIndex].address + '&center=' + entries[entriesIndex].latitude + ',' + entries[entriesIndex].longitude;
+
+    //"https://www.google.com/maps/embed/v1/place?key=AIzaSyBabvMRMRkjX9y7EQcRTu2h_yy7W3yy01s&q=Thai+Chefs+Restaurant+Auckland+66+Parnell+Road+Parnell+Auckland+1052&center=-36.852121,174.77854"
+
+    //Thai+Chefs+Restaurant+Auckland+66+Parnell+Road+Parnell+Auckland+1052&center=-36.852121,174.77854
+
     localStorage.setItem("entriesIndex", entriesIndex)
 }
 
+
+function refreshMap() {
+
+}
