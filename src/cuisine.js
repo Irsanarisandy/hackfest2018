@@ -106,7 +106,7 @@ function getRestaurantData(cuisineType){
     </div> */}
 function loadImg(entry) {
     var carousel = document.getElementById("carouselItems");
-    var imgArray = ['italianCuisine.png', 'indianCuisine.png', 'indian2.jpeg', 'indian3.jpeg', 'indian4.jpeg']
+    var imgArray = ['indian1.jpeg', 'indianCuisine.png', 'indian2.jpeg', 'indian3.jpeg', 'indian4.jpeg']
     var item = imgArray[Math.floor(Math.random()*imgArray.length)];
     
     carousel.innerHTML = '';
