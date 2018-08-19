@@ -127,13 +127,18 @@
 .carousel-item div{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* overflow: hidden; */
+    background-image:url(http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .slideImg{
-    height: 100%;
+    width: 100%;
 }
 
 .carousel-control-prev,
