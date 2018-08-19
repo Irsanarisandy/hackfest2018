@@ -102,7 +102,7 @@ function loadRestaurantData() {
 
 function loopRestaurants() {
     var entriesIndex = JSON.parse(localStorage.getItem("entriesIndex"));
-    if (entriesIndex < entries.length) {
+    if (entriesIndex < entries.length-1) {
         entriesIndex = entriesIndex + 1;
     } else {
         localStorage.setItem("entriesIndex", 0)
@@ -142,7 +142,7 @@ function loopBackRestaurants() {
     if (entriesIndex > 0) {
         entriesIndex = entriesIndex - 1;
     } else {
-        localStorage.setItem("entriesIndex", entries.length)
+        localStorage.setItem("entriesIndex", entries.length-1)
         entriesIndex = JSON.parse(localStorage.getItem("entriesIndex"));
     }
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
