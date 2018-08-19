@@ -46,6 +46,10 @@ function getData(){
         .then(response => response.text())
         .then(data => console.log(data))
 }
+function asyncImg(name) {
+    return fetch('http://localhost:5000/image/' + name)
+    .then(response => response.text())
+}
 function getRestaurantData(cuisineType){
     if (cuisineType === 'random') {
         var array = ['Chinese', 'Indian', 'Italian', 'Japanese', 'Mexican', 'Thai']
@@ -55,11 +59,32 @@ function getRestaurantData(cuisineType){
     fetch('http://localhost:5000/api/' + cuisineType) // Change for heroku deployment
         .then(response => response.text())
         .then(data => JSON.parse(data))
-        .then(data => {
+        .then(async data => {
             // entries.push(data.zenbu.entries.entry)
-            for (i = 0; i < data.zenbu.entries.entry.length; i++) { 
-                entries.push(data.zenbu.entries.entry[i])
-            }
+            // var promises = []
+
+            const entries = data.zenbu.entries.entry;
+
+            console.log("entries.length =", entries.length);
+
+            const promises = entries.map(entry => asyncImg(entry.name));
+            console.log('promises = ', promises);
+
+            Promise.all(promises).then(images => {
+                console.log('images = ', images)
+                images.map((img, index) => {
+                    data.zenbu.entries.entry[index].imgUrl = JSON.parse(img).imgUrl;
+                    // entries.push(data.zenbu.entries.entry[index])
+                })
+
+            });
+
+            // for (i = 0; i < data.zenbu.entries.entry.length; i++) { 
+            //     // promises.push(asyncImg(data.zenbu.entries.entry[i].name));
+            //     entries.push(data.zenbu.entries.entry[i])
+                
+            //     // entries.push(data.zenbu.entries.entry[i])
+            // }
 
             console.log('array:', entries);
             // $("restaurantName").update(entries[0].name)
@@ -72,8 +97,46 @@ function getRestaurantData(cuisineType){
         })
 }
 
+
+{/* <div class="carousel-item active">
+        <div style="background-image:url(assets/italianCuisine.png)" alt="First slide"></div>
+    </div>
+    <div class="carousel-item">
+        <div style="background-image:url(assets/indianCuisine.png)" alt="Second slide"></div>
+    </div> */}
+function loadImg(entry) {
+    var carousel = document.getElementById("carouselItems");
+    var imgArray = ['italianCuisine.png', 'indianCuisine.png', 'indian2.jpeg', 'indian3.jpeg', 'indian4.jpeg']
+    var item = imgArray[Math.floor(Math.random()*imgArray.length)];
+    
+    carousel.innerHTML = '';
+
+    // var divs = entries.map((entry, i) => {
+        var div1 = document.createElement('div');
+        // if(i === 0) {
+            div1.className = "carousel-item active";
+        // } else {
+        //     div1.className = "carousel-item";
+        // }
+        var div2  = document.createElement('div');
+        div2.style.backgroundImage = 'url(assets/' + item + ')';
+        div1.appendChild(div2);
+        // return div1;
+    // })
+    // divs.forEach(entry => {
+        carousel.appendChild(div1);
+    // });
+
+}
 function loadRestaurantData() {
     entries = JSON.parse(localStorage.getItem("entries"));
+    console.log(entries)
+
+
+    loadImg(entries[0])
+
+
+
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
     
     if (typeof entries[0].name === 'object') {
@@ -100,7 +163,8 @@ function loadRestaurantData() {
         document.getElementById("placeHours").innerHTML = entries[0].open;
     }
 
-    console.log(entries)
+    
+
     localStorage.setItem("entriesIndex", 0)
 }
 
@@ -112,6 +176,11 @@ function loopRestaurants() {
         localStorage.setItem("entriesIndex", 0)
         entriesIndex = 0
     }
+
+
+    loadImg(entries[entriesIndex])
+
+
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
 
     // if (typeof entries[entriesIndex].name === 'object') {
@@ -159,6 +228,11 @@ function loopBackRestaurants() {
         localStorage.setItem("entriesIndex", entries.length-1)
         entriesIndex = JSON.parse(localStorage.getItem("entriesIndex"));
     }
+
+
+    loadImg(entries[entriesIndex])
+
+
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
 
     if (typeof entries[entriesIndex].name === 'object') {
