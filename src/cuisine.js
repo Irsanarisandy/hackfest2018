@@ -70,35 +70,103 @@ function getRestaurantData(cuisineType){
 function loadRestaurantData() {
     entries = JSON.parse(localStorage.getItem("entries"));
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
-    console.log(entries[0].name)
-    document.getElementById("restaurantName").innerHTML = entries[0].name;
-    document.getElementById("cuisineType").innerHTML = cuisineType;
-    document.getElementById("placeAddress").innerHTML = entries[0].address;
-    document.getElementById("placePhone").innerHTML = entries[0].phone;
-    if (typeof entries[0].open === 'object') {
-        console.log('no data');
+    
+    
+    if (typeof entries[0].name === 'object') {
+        document.getElementById("restaurantName").innerHTML = 'N/A';
+    } else {
+        document.getElementById("restaurantName").innerHTML = entries[0].name;
+    }
 
-    document.getElementById("placeHours").innerHTML = '( Please check with the restaurant )';
+    document.getElementById("cuisineType").innerHTML = cuisineType;
+
+    if (typeof entries[0].address === 'object') {
+        document.getElementById("placeAddress").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placeAddress").innerHTML = entries[0].address;
+    }
+    if (typeof entries[0].phone === 'object') {
+        document.getElementById("placePhone").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placePhone").innerHTML = entries[0].phone;
+    }
+    if (typeof entries[0].open === 'object') {
+        document.getElementById("placeHours").innerHTML = 'N/A';
     } else {
         document.getElementById("placeHours").innerHTML = entries[0].open;
     }
 
+    console.log(entries)
     localStorage.setItem("entriesIndex", 0)
 }
 
 function loopRestaurants() {
     var entriesIndex = JSON.parse(localStorage.getItem("entriesIndex"));
-    entriesIndex = entriesIndex + 1;
+    if (entriesIndex < entries.length) {
+        entriesIndex = entriesIndex + 1;
+    } else {
+        localStorage.setItem("entriesIndex", 0)
+        entriesIndex = 0
+    }
     var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
-    
-    document.getElementById("restaurantName").innerHTML = entries[entriesIndex].name;
-    document.getElementById("cuisineType").innerHTML = cuisineType;
-    document.getElementById("placeAddress").innerHTML = entries[entriesIndex].address;
-    document.getElementById("placePhone").innerHTML = entries[entriesIndex].phone;
-    if (typeof entries[0].open === 'object') {
-        console.log('no data');
 
-    document.getElementById("placeHours").innerHTML = '( Please check with the restaurant )';
+    if (typeof entries[entriesIndex].name === 'object') {
+        document.getElementById("restaurantName").innerHTML = 'N/A';
+    } else {
+        document.getElementById("restaurantName").innerHTML = entries[entriesIndex].name;
+    }
+
+    document.getElementById("cuisineType").innerHTML = cuisineType;
+
+    if (typeof entries[entriesIndex].address === 'object') {
+        document.getElementById("placeAddress").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placeAddress").innerHTML = entries[entriesIndex].address;
+    }
+    if (typeof entries[entriesIndex].phone === 'object') {
+        document.getElementById("placePhone").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placePhone").innerHTML = entries[entriesIndex].phone;
+    }
+    if (typeof entries[0].open === 'object') {
+        document.getElementById("placeHours").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placeHours").innerHTML = entries[entriesIndex].open;
+    }
+
+    localStorage.setItem("entriesIndex", entriesIndex)
+}
+
+function loopBackRestaurants() {
+    var entriesIndex = JSON.parse(localStorage.getItem("entriesIndex"));
+    if (entriesIndex > 0) {
+        entriesIndex = entriesIndex - 1;
+    } else {
+        localStorage.setItem("entriesIndex", entries.length)
+        entriesIndex = JSON.parse(localStorage.getItem("entriesIndex"));
+    }
+    var cuisineType = JSON.parse(localStorage.getItem("cuisineType"));
+
+    if (typeof entries[entriesIndex].name === 'object') {
+        document.getElementById("restaurantName").innerHTML = 'N/A';
+    } else {
+        document.getElementById("restaurantName").innerHTML = entries[entriesIndex].name;
+    }
+
+    document.getElementById("cuisineType").innerHTML = cuisineType;
+
+    if (typeof entries[entriesIndex].address === 'object') {
+        document.getElementById("placeAddress").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placeAddress").innerHTML = entries[entriesIndex].address;
+    }
+    if (typeof entries[entriesIndex].phone === 'object') {
+        document.getElementById("placePhone").innerHTML = 'N/A';
+    } else {
+        document.getElementById("placePhone").innerHTML = entries[entriesIndex].phone;
+    }
+    if (typeof entries[0].open === 'object') {
+        document.getElementById("placeHours").innerHTML = 'N/A';
     } else {
         document.getElementById("placeHours").innerHTML = entries[entriesIndex].open;
     }

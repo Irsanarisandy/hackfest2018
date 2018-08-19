@@ -1,8 +1,9 @@
-$(document).ready(function () {
-    $('.foodCarousel').slick({
-        arrows: true,
-        // centerMode: true,
-        // // centerPadding: '60px',
-        // slidesToShow: 2,
-    });
-});
+// const getImages = () => {
+//     let sliderContainerWidth = document.querySelector('.carousel-inner').clientWidth;
+//     var sliderImgs= document.querySelectorAll('.slideImg');
+
+
+
+//     console.log(slider);
+
+// }
