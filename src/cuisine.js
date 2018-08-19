@@ -47,6 +47,11 @@ function getData(){
         .then(data => console.log(data))
 }
 function getRestaurantData(cuisineType){
+    if (cuisineType === 'random') {
+        var array = ['Chinese', 'Indian', 'Italian', 'Japanese', 'Mexican', 'Thai']
+        var item = array[Math.floor(Math.random()*array.length)];
+        cuisineType = item;
+    }
     fetch('http://localhost:5000/api/' + cuisineType) // Change for heroku deployment
         .then(response => response.text())
         .then(data => JSON.parse(data))
